@@ -184,47 +184,16 @@ const testCases = [
     "What is covered by the test": "Names / places / common English words; Interrogative (question); M (31–299 characters); Accuracy validation"
   },
   {
-    "TC ID": "Pos_Fun_0017",
-    "Test case name": "Convert long multiline daily schedule preserves formatting",
-    "Input length type": "L",
-    // "Input": "heta udhee 8.30 AM api pitath vemu. <br>10.30 AM venakota apita gaallata yanna puluvan veyi. <br>iitapasse api galu kotuvata gihin poddak aevidhalaa poto tikak aragamu. <br>iita passe udheeta kaala ehema muhudhata bahimu. <br>havas venakan apita vinoodha venna puLuvan.<br>havasta cafe ekakata gihin coffee bomu. <br>ehen 6.00 PM pitath unan hodhatama aethi. <br>oninam apita raee kaeema aragenama enna puluvan. <br>kattiya kaemathi vidhiyata katha karalaa balalaa karamu<br>godak raeevenna kalin apita gedhara enna puLuvan.",
-    // "Expected output": "හෙට උදේ 8.30 AM අපි පිටත් වෙමු. <br>10.30 AM වෙනකොට අපිට ගාල්ලට යන්න පුලුවන් වෙයි. <br>ඊටපස්සෙ අපි ගලු කොටුවට ගිහින් පොඩ්ඩක් ඇවිදලා පොටො ටිකක් අරගමු. <br>ඊට පස්සෙ උදේට කාල එහෙම මුහුදට බහිමු. <br>හවස් වෙනකන් අපිට විනෝද වෙන්න පුළුවන්.<br>හවස්ට cafe එකකට ගිහින් coffee බොමු. <br>එහෙන් 6.00 PM පිටත් උනන් හොදටම ඇති. <br>ඔනිනම් අපිට රෑ කෑම අරගෙනම එන්න පුලුවන්. <br>කට්ටිය කැමති විදියට කත කරලා බලලා කරමු<br>ගොඩක් රෑවෙන්න කලින් අපිට ගෙදර එන්න පුළුවන්.",
-    // "Actual output": "හෙට උදේ 8.30 AM අපි පිටත් වෙමු. <br>10.30 AM වෙනකොට අපිට ගාල්ලට යන්න පුලුවන් වෙයි. <br>ඊටපස්සෙ අපි ගලු කොටුවට ගිහින් පොඩ්ඩක් ඇවිදලා පොටො ටිකක් අරගමු. <br>ඊට පස්සෙ උදේට කාල එහෙම මුහුදට බහිමු. <br>හවස් වෙනකන් අපිට විනෝද වෙන්න පුළුවන්<br>හවස්ට cafe එකකට ගිහින් coffee බොමු. <br>එහෙන් 6.00 PM පිටත් උනන් හොදටම ඇති. <br>ඔනිනම් අපිට රෑ කෑම අරගෙනම එන්න පුලුවන්. <br>කට්ටිය කැමති විදියට කත කරලා බලලා කරමු<br>ගොඩක් රෑවෙන්න කලින් අපිට ගෙදර එන්න පුළුවන්.",
-    //
-   "Input": `heta udhee 8.30 AM api pitath vemu.
-            10.30 AM venakota apita gaallata yanna puluvan veyi.
-            iitapasse api galu kotuvata gihin poddak aevidhalaa potoo tikak aragamu.
-            iita passe udheeta kaala ehema muhudhata bahimu.
-            havas venakan apita vinoodha venna puLuvan.
-            havasta cafe ekakata gihin coffee bomu.
-            ehen 6.00 PM pitath unan hodhatama aethi.
-            oninam apita raee kaeema aragenama enna puluvan.
-            kattiya kaemathi vidhiyata kathaa karalaa balalaa karamu.
-            godak raeevenna kalin apita gedhara enna puluvan.`,
-      "Expected output": `හෙට උදේ 8.30 AM අපි පිටත් වෙමු.
-                          10.30 AM වෙනකොට අපිට ගාල්ලට යන්න පුලුවන් වෙයි.
-                          ඊටපස්සෙ අපි ගලු කොටුවට ගිහින් පොඩ්ඩක් ඇවිදලා පොටෝ ටිකක් අරගමු.
-                          ඊට පස්සෙ උදේට කාල එහෙම මුහුදට බහිමු.
-                          හවස් වෙනකන් අපිට විනෝද වෙන්න පුළුවන්.
-                          හවස්ට cafe එකකට ගිහින් coffee බොමු.
-                          එහෙන් 6.00 PM පිටත් උනන් හොදටම ඇති.
-                          ඔනිනම් අපිට රෑ කෑම අරගෙනම එන්න පුලුවන්.
-                          කට්ටිය කැමති විදියට කතා කරලා බලලා කරමු.
-                          ගොඩක් රෑවෙන්න කලින් අපිට ගෙදර එන්න පුලුවන්.`,
-    "Actual output": `හෙට උදේ 8.30 AM අපි පිටත් වෙමු.
-                      10.30 AM වෙනකොට අපිට ගාල්ලට යන්න පුලුවන් වෙයි.
-                      ඊටපස්සෙ අපි ගලු කොටුවට ගිහින් පොඩ්ඩක් ඇවිදලා පොටෝ ටිකක් අරගමු.
-                      ඊට පස්සෙ උදේට කාල එහෙම මුහුදට බහිමු.
-                      හවස් වෙනකන් අපිට විනෝද වෙන්න පුළුවන්.
-                      හවස්ට cafe එකකට ගිහින් coffee බොමු.
-                      එහෙන් 6.00 PM පිටත් උනන් හොදටම ඇති.
-                      ඔනිනම් අපිට රෑ කෑම අරගෙනම එන්න පුලුවන්.
-                      කට්ටිය කැමති විදියට කතා කරලා බලලා කරමු.
-                      ගොඩක් රෑවෙන්න කලින් අපිට ගෙදර එන්න පුලුවන්.`,
-    "Status": "Pass",
-    "Accuracy justification / Description": "The system correctly preserves multi-line spacing and paragraph formatting. Present tense meaning is maintained throughout.",
-    "What is covered by the test": "Formatting (spaces / line breaks / paragraph); Present tense; L (≥300 characters); Formatting preservation"
-  },
+  "TC ID": "Pos_Fun_0017",
+  "Test case name": "Convert long multiline daily schedule preserves formatting",
+  "Input length type": "L",
+  "Input": "heta udhee 8.30 AM api pitath vemu.\n10.30 AM venakota apita gaallata yanna puluvan veyi.\niitapasse api galu kotuvata gihin poddak aevidhalaa potoo tikak aragamu.\niita passe udheeta kaala ehema muhudhata bahimu.\nhavas venakan apita vinoodha venna puLuvan.\nhavasta cafe ekakata gihin coffee bomu.\nehen 6.00 PM pitath unan hodhatama aethi.\noninam apita raee kaeema aragenama enna puluvan.\nkattiya kaemathi vidhiyata kathaa karalaa balalaa karamu.\ngodak raeevenna kalin apita gedhara enna puluvan.",
+  "Expected output": "හෙට උදේ 8.30 AM අපි පිටත් වෙමු.\n10.30 AM වෙනකොට අපිට ගාල්ලට යන්න පුලුවන් වෙයි.\nඊටපස්සෙ අපි ගලු කොටුවට ගිහින් පොඩ්ඩක් ඇවිදලා පොටෝ ටිකක් අරගමු.\nඊට පස්සෙ උදේට කාල එහෙම මුහුදට බහිමු.\nහවස් වෙනකන් අපිට විනෝද වෙන්න පුළුවන්.\nහවස්ට cafe එකකට ගිහින් coffee බොමු.\nඑහෙන් 6.00 PM පිටත් උනන් හොදටම ඇති.\nඔනිනම් අපිට රෑ කෑම අරගෙනම එන්න පුලුවන්.\nකට්ටිය කැමති විදියට කතා කරලා බලලා කරමු.\nගොඩක් රෑවෙන්න කලින් අපිට ගෙදර එන්න පුලුවන්.",
+  "Actual output": "හෙට උදේ 8.30 AM අපි පිටත් වෙමු.\n10.30 AM වෙනකොට අපිට ගාල්ලට යන්න පුලුවන් වෙයි.\nඊටපස්සෙ අපි ගලු කොටුවට ගිහින් පොඩ්ඩක් ඇවිදලා පොටෝ ටිකක් අරගමු.\nඊට පස්සෙ උදේට කාල එහෙම මුහුදට බහිමු.\nහවස් වෙනකන් අපිට විනෝද වෙන්න පුළුවන්.\nහවස්ට cafe එකකට ගිහින් coffee බොමු.\nඑහෙන් 6.00 PM පිටත් උනන් හොදටම ඇති.\nඔනිනම් අපිට රෑ කෑම අරගෙනම එන්න පුලුවන්.\nකට්ටිය කැමති විදියට කතා කරලා බලලා කරමු.\nගොඩක් රෑවෙන්න කලින් අපිට ගෙදර එන්න පුලුවන්.",
+  "Status": "Pass",
+  "Accuracy justification / Description": "The system correctly preserves multi-line spacing and paragraph formatting. Present tense meaning is maintained throughout.",
+  "What is covered by the test": "Formatting (spaces / line breaks / paragraph); Present tense; L (≥300 characters); Formatting preservation"
+},
   {
     "TC ID": "Pos_Fun_0018",
     "Test case name": "Convert long multi-sentence personal plan with informal language",
