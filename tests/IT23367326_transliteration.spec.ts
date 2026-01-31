@@ -320,17 +320,6 @@ const TEST_DATA = {
     "Accuracy justification / Description": "Input contains only whitespace characters. No error message shown to inform user of invalid input.",
     "What is covered by the test": "Empty/cleared input handling; S (≤30 characters); Robustness validation"
   },
-  // {
-  //   "TC ID": "Neg_Fun_0004",
-  //   "Test case name": "Symbols-only input handling",
-  //   "Input length type": "S",
-  //   "Input": "###@@@$$$%%%&&&",
-  //   "Expected output": "Error",
-  //   "Actual output": "###@@@$$$%%%&&&",
-  //   "Status": "Fail",
-  //   "Accuracy justification / Description": "Input contains only special characters and symbols. No Singlish or phonetic structure present.",
-  //   "What is covered by the test": "Typographical error handling; S (≤30 characters); Robustness validation"
-  // },
   {
     "TC ID": "Neg_Fun_0004",
     "Test case name": "Partial English retention requirement",
@@ -342,19 +331,9 @@ const TEST_DATA = {
     "Accuracy justification / Description": "System incorrectly retains 'mage' as English when it should be transliterated, while 'sereppu' is correctly transliterated.",
     "What is covered by the test": "English-like Singlish words; Word boundary detection"
   },
-  // {
-  //   "TC ID": "Neg_Fun_0005",
-  //   "Test case name": "Missing vowels in words",
-  //   "Input length type": "M",
-  //   "Input": "pdhDhthy pvsm dhooShyk hdhngn th. prshlk nm sh mrpdhy nvrdhv thlth krnn. gtlv dhgtm pvth nm, pg shy kNdyym mthnn.",
-  //   "Expected output": "Error",
-  //   "Actual output": "ප්ද්ධ්ත්ය් ප්ව්ස්ම් දෝෂ්ය්ක් හ්ද්න්ග්න් ත්. ප්‍රශ්ල්ක් න්ම් ශ් ම්‍රප්ද්ය් න්ව්‍රද්ව් ත්ල්ත් ක්‍රන්න්. ග්ට්ල්ව් ද්ග්ට්ම් ප්ව්ත් න්ම්, pg shy ක්ණ්ඩ්ය්ය්ම් ම්ත්න්න්.",
-  //   "Status": "Fail",
-  //   "Accuracy justification / Description": "Input words have missing vowels, making them incomplete and ambiguous. System fails to convert chat style informal language correctly.",
-  //   "What is covered by the test": "Slang / informal language; Compund sentence; M (31–299 characters); Robustness validation"
-  // },
+ 
   {
-    "TC ID": "Neg_Fun_0018",
+    "TC ID": "Neg_Fun_0005",
     "Test case name": "Cybersecurity context with Sinhala transliteration",
     "Input length type": "M",
     "Input": "api Cyber aparaaDha valin apagee dhaththa aarakShaa karagatha yuthuyi.",
@@ -375,17 +354,7 @@ const TEST_DATA = {
     "Accuracy justification / Description": "Input contains valid Singlish mixed with excessive special symbols. Shows system's inability to ignore symbols while converting valid words.",
     "What is covered by the test": "Typographical error handling; M (31–299 characters); Robustness validation"
   },
-  // {
-  //   "TC ID": "Neg_Fun_0007",
-  //   "Test case name": "Mixed slang and abbreviations handling",
-  //   "Input length type": "M",
-  //   "Input": "hey bro thx 4 ur help tdy , really helped a lot. c u l8r @ the meeting gonna b gr8 machan.catch u soon @ campus",
-  //   "Expected output": "Error",
-  //   "Actual output": "hey bro තx 4 උර් help ට්ඩ්ය් , really helped a lot. c උ l8ර් @ තෙ meeting ගොන්න b gr8 මචන්.catch උ soon @ campus",
-  //   "Status": "Fail",
-  //   "Accuracy justification / Description": "System incorrectly converts parts of informal English/abbreviations into Sinhala. Text remains mostly unconverted.",
-  //   "What is covered by the test": "Slang / informal language; Compound sentence; M (31–299 characters); Robustness validation"
-  // },
+ 
   {
     "TC ID": "Neg_Fun_0007",
     "Test case name": "Repeated abbreviation in single sentence",
@@ -397,20 +366,10 @@ const TEST_DATA = {
     "Accuracy justification / Description": "Same abbreviation 'aBA' appears multiple times but none are transliterated, showing pattern recognition failure.",
     "What is covered by the test": "Consistency in abbreviation handling; Repeated patterns"
   },
-  // {
-  //   "TC ID": "Neg_Fun_0008",
-  //   "Test case name": "Long paragraph with excessive spacing",
-  //   "Input length type": "L",
-  //   "Input": "nithara           nithara            mageth                ekka                  raNdu                venna                laeesthi                     venna                     epaa.                    dhavasa                     thissema mahansi                 vela                  gedhara                     enne                      poddak                  hitha                       nidhahasen                    inna.                       prashnayak                 thiyenavanan                        hemiita                         kathaa                        karalaa           visadha gamu.",
-  //   "Expected output": "Error",
-  //   "Actual output": "නිතර            නිතර            මගෙත්                එක්ක                  රණ්ඩු                වෙන්න                ලෑස්ති                     වෙන්න                     එපා.                    දවස                     තිස්සෙම මහන්සි                 වෙල                  ගෙදර                     එන්න                      පොඩ්ඩක්                  හිත                       නිදහසෙන්                    ඉන්න.                       ප්‍රශ්නයක්                 තියෙනවන්න්                        හෙමීට                         කතා                        කරලා           විසද ගමු.",
-  //   "Status": "Fail",
-  //   "Accuracy justification / Description": "Formatting inconsistencies affect readability. Demonstrates handling of whitespace at scale.",
-  //   "What is covered by the test": "Formatting (spaces / line breaks / paragraph); Simple sentence; L (≥300 characters); Robustness validation"
-  // },
+
 
    {
-    "TC ID": "Pos_Fun_0016",
+    "TC ID": "Neg_Fun_0008",
     "Test case name": "English greeting with Singlish meeting arrangement",
     "Input length type": "S",
     "Input": "Hi, api heta havasata meet vemudha?",
@@ -480,6 +439,7 @@ const TEST_DATA = {
   }
 ]
 };
+
 
 // Helper Class
 class TranslatorPage {

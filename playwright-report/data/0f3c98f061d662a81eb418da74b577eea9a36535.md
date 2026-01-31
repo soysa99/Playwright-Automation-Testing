@@ -118,37 +118,26 @@
                 - img [ref=e126]
               - button "Redo" [ref=e128] [cursor=pointer]:
                 - img [ref=e129]
-          - generic [ref=e131]:
-            - textbox "Input Your Singlish Text Here." [active] [ref=e132]: Technology has fundamentally reshaped how we communicate, work, and live. With the rise of smartphones and the internet, information flows faster than ever, connecting people across the globe. However, this digital shift also brings challenges like privacy concerns and digital fatigue. To build a balanced future, we must design tech that empowers without overwhelming prioritizing human well-being alongside innovation. Responsible progress is key.
-            - list [ref=e134]:
-              - listitem [ref=e135] [cursor=pointer]: කෙයොලින්
-              - listitem [ref=e136] [cursor=pointer]: කෙයෝලින්
-              - listitem [ref=e137] [cursor=pointer]: කෙයිත්නස්
-              - listitem [ref=e138] [cursor=pointer]: කෙයොලිනයිට්
-              - listitem [ref=e139] [cursor=pointer]: කෙයිත්නස් පාදය
-              - listitem [ref=e140] [cursor=pointer]: කෙයොලින් පිඟන් මැටි
-              - listitem [ref=e141] [cursor=pointer]: කෙය.
-              - listitem [ref=e142] [cursor=pointer]: ඛෙය.
-          - generic [ref=e143]:
-            - button "Open File" [ref=e144] [cursor=pointer]:
-              - img [ref=e145]
-            - button "Copy" [ref=e147] [cursor=pointer]:
-              - img [ref=e148]
-            - button "Cut" [ref=e150] [cursor=pointer]:
-              - img [ref=e151]
-            - button "Paste" [ref=e153] [cursor=pointer]:
-              - img [ref=e154]
-            - button "Clear" [ref=e156] [cursor=pointer]:
-              - img [ref=e157]
-        - button "Swap Languages" [ref=e160] [cursor=pointer]:
-          - img [ref=e161]
-        - generic [ref=e163]:
-          - generic [ref=e164]: Sinhala
-          - generic [ref=e165]: Technology හස් fundamentally reshaped how we communicate, work, and live. With තෙ rise ඔෆ් smartphones and තෙ internet, information flows faster than ever, connecting people across තෙ globe. However, තිස් digital shift also brings challenges like privacy concerns and digital fatigue. To build a balanced future, we must design tech that empowers without overwhelming prioritizing human well-being alongside innovation. Responsible progress ඉස් key.
-          - generic [ref=e166]:
-            - button "Copy" [ref=e167] [cursor=pointer]:
-              - img [ref=e168]
-            - button "Clear" [ref=e170] [cursor=pointer]:
-              - img [ref=e171]
-      - button "Clear" [ref=e174] [cursor=pointer]: 🗑️ Clear
+          - textbox "Input Your Singlish Text Here." [active] [ref=e132]: ee vaedee hari giye naee.
+          - generic [ref=e133]:
+            - button "Open File" [ref=e134] [cursor=pointer]:
+              - img [ref=e135]
+            - button "Copy" [ref=e137] [cursor=pointer]:
+              - img [ref=e138]
+            - button "Cut" [ref=e140] [cursor=pointer]:
+              - img [ref=e141]
+            - button "Paste" [ref=e143] [cursor=pointer]:
+              - img [ref=e144]
+            - button "Clear" [ref=e146] [cursor=pointer]:
+              - img [ref=e147]
+        - button "Swap Languages" [ref=e150] [cursor=pointer]:
+          - img [ref=e151]
+        - generic [ref=e153]:
+          - generic [ref=e154]: Sinhala
+          - generic [ref=e156]:
+            - button "Copy" [ref=e157] [cursor=pointer]:
+              - img [ref=e158]
+            - button "Clear" [ref=e160] [cursor=pointer]:
+              - img [ref=e161]
+      - button "Clear" [ref=e164] [cursor=pointer]: 🗑️ Clear
 ```
